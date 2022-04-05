@@ -80,6 +80,20 @@ var config_data = `
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
+      "Auto Attempted": {
+        "code":"aa",
+        "title": "Auto Attempted",
+        "type":"radio",
+        "choices":{
+          "0":"Not Attempted<br>",
+          "1":"1-Cargo<br>",
+          "2":"2-Cargo<br>",
+          "3":"3-Cargo<br>",
+          "4":"4-Cargo<br>",
+          "5":"5-Cargo"
+        },
+        "defaultValue":"0"
+      },
       "Auto Aquired Cargo": {
         "code":"ac",
         "title": "Picked up more cargo?",
@@ -107,19 +121,17 @@ var config_data = `
         "title": "Wallbot?",
         "type":"bool"
       },
-      "Cargo Intake From": {
-        "code":"cif",
-        "title": "Cargo Intake From",
-        "type":"radio",
-        "choices":{
-          "t":"Terminal<br>",
-          "g":"Ground<br>",
-          "b":"Both<br>",
-          "x":"Not Attempted"
-        },
-        "defaultValue":"x"
+      "Def: Turned Opponent": {
+        "code":"dt",
+        "title": "Def: Turned Opponent",
+        "type":"counter"
       },
-      "Shooting Spot": {
+      "Def: Opponemt Missed Shot": {
+        "code":"dm",
+        "title": "Def: Opponent Missed Shot",
+        "type":"counter"
+      },
+      "Shooting Spot (Both made and missed)": {
         "code":"ss",
         "title": "Shooting Spot",
         "type":"field_image",
@@ -201,6 +213,18 @@ var config_data = `
         },
         "defaultValue":"3"
       },
+      "Cargo Intake From": {
+        "code":"cif",
+        "title": "Cargo Intake From",
+        "type":"radio",
+        "choices":{
+          "t":"Terminal<br>",
+          "g":"Ground<br>",
+          "b":"Both<br>",
+          "x":"Not Attempted"
+        },
+        "defaultValue":"x"
+      },
       "Died/Tipped": {
         "code":"d",
         "title": "Died/Tipped",
@@ -226,9 +250,9 @@ var config_data = `
           "v":"Very Confident<br>",
           "a":"Average<br>",
           "n":"Not Confident"
-      },
-       "defaultValue":"a"
-    }
+        },
+        "defaultValue":"a"
+      }
     }
   }
 }`;
