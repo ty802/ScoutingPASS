@@ -111,6 +111,11 @@ var config_data = `
         "title": "Def: Opponent Missed Shot",
         "type":"counter"
       },
+      "Def: Pinned Opponent<br>(More than 3 seconds)": {
+        "code":"dp",
+        "title": "Def: Pinned Opponent<br>(More than 3 seconds)",
+        "type":"counter"
+      },
       "Upper Cargo Scored": {
         "code":"tu",
         "title": "Uppoer Cargo Scored",
