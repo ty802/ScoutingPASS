@@ -101,26 +101,6 @@ var config_data = `
       }
     },
     "teleop": {
-      "Upper Cargo Scored": {
-        "code":"tu",
-        "title": "Uppoer Cargo Scored",
-        "type":"counter"
-      },
-      "Lower Cargo Scored": {
-        "code":"tl",
-        "title": "Lower Cargo Scored",
-        "type":"counter"
-      },
-      "Was Defended": {
-        "code":"wd",
-        "title": "Was Defended",
-        "type":"bool"
-      },
-      "Wallbot?": {
-        "code":"wbt",
-        "title": "Wallbot?",
-        "type":"bool"
-      },
       "Def: Turned Opponent": {
         "code":"dt",
         "title": "Def: Turned Opponent",
@@ -129,6 +109,16 @@ var config_data = `
       "Def: Opponemt Missed Shot": {
         "code":"dm",
         "title": "Def: Opponent Missed Shot",
+        "type":"counter"
+      },
+      "Upper Cargo Scored": {
+        "code":"tu",
+        "title": "Uppoer Cargo Scored",
+        "type":"counter"
+      },
+      "Lower Cargo Scored": {
+        "code":"tl",
+        "title": "Lower Cargo Scored",
         "type":"counter"
       },
       "Shooting Spot (Both made and missed)": {
@@ -224,6 +214,16 @@ var config_data = `
           "x":"Not Attempted"
         },
         "defaultValue":"x"
+      },
+      "Was Defended": {
+        "code":"wd",
+        "title": "Was Defended",
+        "type":"bool"
+      },
+      "Wallbot?": {
+        "code":"wbt",
+        "title": "Wallbot?",
+        "type":"bool"
       },
       "Died/Tipped": {
         "code":"d",
