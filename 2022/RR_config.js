@@ -80,6 +80,20 @@ var config_data = `
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
+      "Auto Attempted": {
+        "code":"aa",
+        "title": "Auto Attempted",
+        "type":"radio",
+        "choices":{
+          "0":"Not Attempted<br>",
+          "1":"1-Cargo<br>",
+          "2":"2-Cargo<br>",
+          "3":"3-Cargo<br>",
+          "4":"4-Cargo<br>",
+          "5":"5-Cargo"
+        },
+        "defaultValue":"0"
+      },
       "Auto Aquired Cargo": {
         "code":"ac",
         "title": "Picked up more cargo?",
@@ -87,6 +101,21 @@ var config_data = `
       }
     },
     "teleop": {
+      "Def: Turned Opponent": {
+        "code":"dt",
+        "title": "Def: Turned Opponent",
+        "type":"counter"
+      },
+      "Def: Opponemt Missed Shot": {
+        "code":"dm",
+        "title": "Def: Opponent Missed Shot",
+        "type":"counter"
+      },
+      "Def: Pinned Opponent<br>(More than 3 seconds)": {
+        "code":"dp",
+        "title": "Def: Pinned Opponent<br>(More than 3 seconds)",
+        "type":"counter"
+      },
       "Upper Cargo Scored": {
         "code":"tu",
         "title": "Uppoer Cargo Scored",
@@ -97,29 +126,7 @@ var config_data = `
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
-      "Was Defended": {
-        "code":"wd",
-        "title": "Was Defended",
-        "type":"bool"
-      },
-      "Wallbot?": {
-        "code":"wbt",
-        "title": "Wallbot?",
-        "type":"bool"
-      },
-      "Cargo Intake From": {
-        "code":"cif",
-        "title": "Cargo Intake From",
-        "type":"radio",
-        "choices":{
-          "t":"Terminal<br>",
-          "g":"Ground<br>",
-          "b":"Both<br>",
-          "x":"Not Attempted"
-        },
-        "defaultValue":"x"
-      },
-      "Shooting Spot": {
+      "Shooting Spot (Both made and missed)": {
         "code":"ss",
         "title": "Shooting Spot",
         "type":"field_image",
@@ -201,6 +208,28 @@ var config_data = `
         },
         "defaultValue":"3"
       },
+      "Cargo Intake From": {
+        "code":"cif",
+        "title": "Cargo Intake From",
+        "type":"radio",
+        "choices":{
+          "t":"Terminal<br>",
+          "g":"Ground<br>",
+          "b":"Both<br>",
+          "x":"Not Attempted"
+        },
+        "defaultValue":"x"
+      },
+      "Was Defended": {
+        "code":"wd",
+        "title": "Was Defended",
+        "type":"bool"
+      },
+      "Wallbot?": {
+        "code":"wbt",
+        "title": "Wallbot?",
+        "type":"bool"
+      },
       "Died/Tipped": {
         "code":"d",
         "title": "Died/Tipped",
@@ -226,9 +255,9 @@ var config_data = `
           "v":"Very Confident<br>",
           "a":"Average<br>",
           "n":"Not Confident"
-      },
-       "defaultValue":"a"
-    }
+        },
+        "defaultValue":"a"
+      }
     }
   }
 }`;
