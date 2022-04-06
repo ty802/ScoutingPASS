@@ -106,7 +106,7 @@ var config_data = `
         "title": "Def: Turned Opponent",
         "type":"counter"
       },
-      "Def: Opponemt Missed Shot": {
+      "Def: Opponent Missed Shot": {
         "code":"dm",
         "title": "Def: Opponent Missed Shot",
         "type":"counter"
