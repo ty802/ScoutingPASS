@@ -21,8 +21,16 @@ var options = {
 
 // Must be filled in: e=event, m=match#, l=level(q,qf,sf,f), t=team#, r=robot(r1,r2,b1..), s=scouter
 //var requiredFields = ["e", "m", "l", "t", "r", "s", "as"];
+/***
+ * @type {string[]} array of required field codes
+ */
 var requiredFields = ["e", "m", "l", "r", "s", "as"];
-
+/***
+ * @param {HTMLTableElement} table Table to insert into 
+ * @param {number} idx Table row that the counter will be added at
+ * @param {string} name Name of the counter.
+ * @param {object} data the object data
+ */
 function addCounter(table, idx, name, data){
   var row = table.insertRow(idx);
   var cell1 = row.insertCell(0);
@@ -69,7 +77,12 @@ function addCounter(table, idx, name, data){
 
   return idx+1;
 }
-
+/***
+ * @param {HTMLTableElement} table Table to insert into 
+ * @param {number} idx Table row that the counter will be added at
+ * @param {string} name Name of the counter.
+ * @param {object} data the object data
+ */
 function addFieldImage(table, idx, name, data) {
   var row = table.insertRow(idx);
   idx += 1
@@ -135,7 +148,12 @@ function addFieldImage(table, idx, name, data) {
   img.setAttribute("hidden", "");
   cell.appendChild(img);
 }
-
+/***
+ * @param {HTMLTableElement} table Table to insert into 
+ * @param {number} idx Table row that the counter will be added at
+ * @param {string} name Name of the counter.
+ * @param {object} data the object data
+ */
 function addText(table, idx, name, data) {
   var row = table.insertRow(idx);
   var cell1 = row.insertCell(0);
@@ -178,7 +196,12 @@ function addText(table, idx, name, data) {
 
   return idx+1
 }
-
+/***
+ * @param {HTMLTableElement} table Table to insert into 
+ * @param {number} idx Table row that the counter will be added at
+ * @param {string} name Name of the counter.
+ * @param {object} data the object data
+ */
 function addNumber(table, idx, name, data) {
   var row = table.insertRow(idx);
   var cell1 = row.insertCell(0);
@@ -235,7 +258,12 @@ function addNumber(table, idx, name, data) {
 
   return idx+1;
 }
-
+/***
+ * @param {HTMLTableElement} table Table to insert into 
+ * @param {number} idx Table row that the counter will be added at
+ * @param {string} name Name of the counter.
+ * @param {object} data the object data
+ */
 function addRadio(table, idx, name, data) {
   var row = table.insertRow(idx);
   var cell1 = row.insertCell(0);
@@ -288,7 +316,12 @@ function addRadio(table, idx, name, data) {
 
   return idx+1;
 }
-
+/***
+ * @param {HTMLTableElement} table Table to insert into 
+ * @param {number} idx Table row that the counter will be added at
+ * @param {string} name Name of the counter.
+ * @param {object} data the object data
+ */
 function addCheckbox(table, idx, name, data){
   var row = table.insertRow(idx);
   var cell1 = row.insertCell(0);
@@ -320,7 +353,12 @@ function addCheckbox(table, idx, name, data){
 
   return idx+1;
 }
-
+/***
+ * @param {HTMLTableElement} table Table to insert into 
+ * @param {number} idx Table row that the counter will be added at
+ * @param {string} name Name of the counter.
+ * @param {object} data the object data
+ */
 function addElement(table, idx, name, data){
   var type = null;
   if (data.hasOwnProperty('type')){
