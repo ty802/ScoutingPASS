@@ -243,7 +243,7 @@ var config_data = `
       "Comments": {
         "code":"co",
         "title": "Comments",
-        "type":"text",
+        "type":"textarea",
         "size":15,
         "maxSize":70
       },
