@@ -245,6 +245,7 @@ var config_data = `
         "title": "Comments",
         "type":"textarea",
         "size":15,
+        "rows": 3;
         "maxSize":70
       },
       "Confidence Rating": {
