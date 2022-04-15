@@ -912,7 +912,8 @@ function undo(event)
    drawFields();
 }
 
-function rotateImage() {
+function rotateImage(event) {
+	let rotateID = event.firstChild;
         var img = document.getElementByType(img);
         img.style.transform = 'rotate(180deg)';
     }
