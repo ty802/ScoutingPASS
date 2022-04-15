@@ -91,13 +91,6 @@ function addFieldImage(table, idx, name, data) {
   undoButton.setAttribute("class", "undoButton");
   cell.appendChild(undoButton);
 	
-  var rotateButton = document.createElement("button");
-  rotateButton.setAttribute("type", "checkbox");
-  rotateButton.setAttribute("onclick", "rotateImage()");
-  rotateButton.innerHTML += "Rotate";
-  rotateButton.setAttribute("id", "rotate_"+data.code);
-  rotateButton.setAttribute("class", "rotateButton");
-  cell.appendChild(rotateButton);
 
   row = table.insertRow(idx);
   idx += 1;
@@ -111,6 +104,14 @@ function addFieldImage(table, idx, name, data) {
   canvas.setAttribute("id", "canvas_"+data.code);
   canvas.innerHTML = "No canvas support";
   cell.appendChild(canvas);
+	
+  var rotateButton = document.createElement("button");
+  rotateButton.setAttribute("type", "checkbox");
+  rotateButton.setAttribute("onclick", "rotateImage()");
+  rotateButton.innerHTML += "Rotate";
+  rotateButton.setAttribute("id", "rotate_"+data.code);
+  rotateButton.setAttribute("class", "rotateButton");
+  cell.appendChild(rotateButton);
 	
 
   row = table.insertRow(idx);
