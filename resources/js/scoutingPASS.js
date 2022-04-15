@@ -93,7 +93,7 @@ function addFieldImage(table, idx, name, data) {
 	
   var rotateButton = document.createElement("button");
   rotateButton.setAttribute("type", "checkbox");
-  rotateButton.setAttribute("onclick", "rotateImage(canvas)");
+  rotateButton.setAttribute("onclick", "rotateImage('canvas')");
   rotateButton.innerHTML += "Rotate";
   rotateButton.setAttribute("id", "rotate_"+data.code);
   rotateButton.setAttribute("class", "rotateButton");
@@ -912,9 +912,8 @@ function undo(event)
    drawFields();
 }
 
-function rotateImage(canvas) {
-        var img = document.getElementByType(img);
-        img.style.transform = 'rotate(180deg)';
+function rotateImage() {
+        canvas.style.transform = 'rotate(180deg)';
     }
 
 window.onload = function(){
