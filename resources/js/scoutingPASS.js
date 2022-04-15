@@ -93,7 +93,7 @@ function addFieldImage(table, idx, name, data) {
 	
   var rotateButton = document.createElement("button");
   rotateButton.setAttribute("type", "checkbox");
-  rotateButton.setAttribute("onclick", "rotate(this.parentElement)");
+  rotateButton.setAttribute("onclick", "rotateImage(this.parentElement)");
   rotateButton.innerHTML += "Rotate";
   rotateButton.setAttribute("id", "rotate_"+data.code);
   rotateButton.setAttribute("class", "rotateButton");
