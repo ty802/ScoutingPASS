@@ -90,6 +90,14 @@ function addFieldImage(table, idx, name, data) {
   undoButton.setAttribute("id", "undo_"+data.code);
   undoButton.setAttribute("class", "undoButton");
   cell.appendChild(undoButton);
+	
+  var rotateButton = document.createElement("button");
+  rotateButton.setAttribute("type", "checkbox");
+  rotateButton.setAttribute("onclick", "rotate(this.parentElement)");
+  rotateButton.innerHTML += "Rotate";
+  rotateButton.setAttribute("id", "rotate_"+data.code);
+  rotateButton.setAttribute("class", "rotateButton");
+  cell.appendChild(rotateButton);
 
   row = table.insertRow(idx);
   idx += 1;
