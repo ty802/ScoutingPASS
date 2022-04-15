@@ -103,6 +103,7 @@ function addFieldImage(table, idx, name, data) {
   canvas.setAttribute("id", "canvas_"+data.code);
   canvas.innerHTML = "No canvas support";
   cell.appendChild(canvas);
+	
 
   row = table.insertRow(idx);
   idx += 1
@@ -901,7 +902,12 @@ function undo(event)
    tempValue.pop();
    changingInput.value = JSON.stringify(tempValue);
    drawFields();
-}		
+}
+
+function rotateImage() {
+        var img = document.getElementById('myimage');
+        img.style.transform = 'rotate(180deg)';
+    }
 
 window.onload = function(){
   var ret = configure();
