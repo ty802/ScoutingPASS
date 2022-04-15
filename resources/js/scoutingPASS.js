@@ -905,7 +905,7 @@ function undo(event)
 }
 
 function rotateImage() {
-        var img = document.getElementById('myimage');
+        var img = document.getElementByType(img);
         img.style.transform = 'rotate(180deg)';
     }
 
