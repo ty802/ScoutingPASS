@@ -91,7 +91,7 @@ function addFieldImage(table, idx, name, data) {
   undoButton.setAttribute("class", "undoButton");
   cell.appendChild(undoButton);
 
-  	
+  /*	
   var rotateButton = document.createElement("button");
   rotateButton.setAttribute("type", "checkbox");
   rotateButton.setAttribute("onclick", "rotateImage()");
@@ -99,6 +99,7 @@ function addFieldImage(table, idx, name, data) {
   rotateButton.setAttribute("id", "rotate_"+data.code);
   rotateButton.setAttribute("class", "rotateButton");
   cell.appendChild(rotateButton);
+  */
 	
 
   row = table.insertRow(idx);
@@ -916,10 +917,12 @@ function undo(event)
    drawFields();
 }
 
+/*
 function rotateImage() {
 	context.clearRect(0, 0, canvas.width, canvas.height);
         canvas.style.transform = 'rotate(180deg)';
     }
+*/
 
 window.onload = function(){
   var ret = configure();
