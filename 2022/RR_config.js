@@ -101,6 +101,16 @@ var config_data = `
       }
     },
     "teleop": {
+     "Upper Cargo Scored": {
+        "code":"tu",
+        "title": "Uppoer Cargo Scored",
+        "type":"counter"
+      },
+      "Lower Cargo Scored": {
+        "code":"tl",
+        "title": "Lower Cargo Scored",
+        "type":"counter"
+      },
       "Def: Turned Opponent": {
         "code":"dt",
         "title": "Def: Turned Opponent",
@@ -114,16 +124,6 @@ var config_data = `
       "Def: Pinned Opponent<br>(More than 3 seconds)": {
         "code":"dp",
         "title": "Def: Pinned Opponent<br>(More than 3 seconds)",
-        "type":"counter"
-      },
-      "Upper Cargo Scored": {
-        "code":"tu",
-        "title": "Uppoer Cargo Scored",
-        "type":"counter"
-      },
-      "Lower Cargo Scored": {
-        "code":"tl",
-        "title": "Lower Cargo Scored",
         "type":"counter"
       },
       "Shooting Spot (Both made and missed)": {
@@ -243,9 +243,10 @@ var config_data = `
       "Comments": {
         "code":"co",
         "title": "Comments",
-        "type":"text",
+        "type":"textarea",
         "size":15,
-        "maxSize":50
+        "rows": 3,
+        "maxSize":70
       },
       "Confidence Rating": {
         "code":"cnf",
