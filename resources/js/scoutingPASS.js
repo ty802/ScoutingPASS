@@ -1,6 +1,6 @@
 // ScoutingPASS.js
 //
-// The guts of the ScountingPASS application
+// The guts of the ScoutingPASS application
 // Written by Team 2451 - PWNAGE
 
 document.addEventListener("touchstart", startTouch, false);
